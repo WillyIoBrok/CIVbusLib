@@ -14,18 +14,19 @@ Devices Supported:
 * ESP32				(with this processor, also Bluetooth is possible)
 
 SW for the CI-V master:
-	It can be used in two different ways:
-	1. use of the class CIV only (include CIVmaster.h) for direct access to the CIV-Bus via read and write methods
-	2. use of the class "ICradio" in addition to "CIV" (include CIVmaster.h and ICradio.h). In this case you have access 
-		to some higher level controls of the radios which I found to be useful.
-
-	Command subset as required for the master regarding ICOM's radios is stored in CIVcmds.h
+It can be used in two different ways:
+1. use of the class CIV only (include CIVmaster.h) for 
+   direct access to the CIV-Bus via read and write methods
+2. use of the class "ICradio" in addition to "CIV" (include CIVmaster.h and ICradio.h). 
+   In this case you have access to some higher level controls of the radios which I found to be useful.
+   
+The command subset regarding ICOM's radios as required for the master is stored in CIVcmds.h
 
 SW for a CI-V client:
-	Use of the class CIVclient by including CIVclient.h
-	A sample command set (homebrew) for an antenna rotator can be found in CIVcmdsRotor.h
-	An example can be found in CIVclientRotor, a test program for this client running on CIVmaster can be found 
-	under CIVrotorTest
+- Use of the class CIVclient by including CIVclient.h
+- A sample command set (homebrew) for an antenna rotator can be found in CIVcmdsRotor.h
+- An example can be found in CIVclientRotor, a test program for this client running on CIVmaster can be found
+  under CIVrotorTest
 
 Using CIVmaster and CIVclient is mutually exclusive - only one of them may be used on a single processor 
 
