@@ -2,6 +2,8 @@
 Arduino library for accessing ICOM's Amateur Radios and also homebrew devices
 via ICOM CI-V Bus ("onewire" bus or via Bluetooth for the IC-705).
 
+2022/05/04 : Development on CIVbusLib terminated -> please use CIVmasterLib instead !!!
+
 Version: 0.6
 
 Date: 30-05-2021
